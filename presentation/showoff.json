@@ -2,8 +2,8 @@
     "name": "Einführung in node.js",
     "sections": [
         {"section":"einleitung"},
-        {"section":"nvm"},
         {"section":"javascript"},
+        {"section":"nvm"},
         {"section":"coffee"},
         {"section":"libs"}
     ]

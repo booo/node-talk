@@ -58,15 +58,15 @@
 !SLIDE execute
 # Rechnen
     @@@ javascript
-    console.log(41 + 1)
-    console.log(42/2 + 2)
-    console.log(23 \* 42)
+    console.log(41 + 1);
+    console.log(42/2 + 2);
+    console.log(23 \* 42);
 
 !SLIDE execute
 # Schleifen (for)
     @@@ javascript
     for(var i=1;i<=13;i++) {
-        console.log("Hello World")
+        console.log("Hello World");
     }
 
 !SLIDE execute
@@ -84,7 +84,7 @@
     @@@ javascript
     var name = "aName"; //String
     var i = 1; //Number
-    var list = [1,2,3] //Array (Liste)
+    var list = [1,2,3]; //Array (Liste)
 
 !SLIDE execute
 # Datentypen (Array)
@@ -94,7 +94,7 @@
     list[0] = 23;
     list.push(42); //hängt 42 ans Array an
     //Zwei Listen verknüpfen
-    list2 = list.concat([4,5,6])
+    list2 = list.concat([4,5,6]);
     [1,"string",[],{}] //gültige Liste
 
 !SLIDE
@@ -106,3 +106,14 @@
     rl.question("Wie heißt du?", function(name){
         console.log("Du heißt: " + name);
     });
+
+!SLIDE
+# Module (erstellen)
+    @@@ javascript
+    module.exports = exports = {
+        version: "0.1",
+        name: "myModule",
+        add: function(a,b) {
+            return a+b;
+        }
+    }
