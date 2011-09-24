@@ -117,3 +117,18 @@
             return a+b;
         }
     }
+
+!SLIDE
+# Callbacks
+    @@@ javascript
+
+    var fn = function fn(callback) {
+        //do something funny
+        /call the callback
+        callback("great fun");
+    }
+
+    //call the function which accepts a callback
+    fn(function(result){
+        console.log(result);
+    })

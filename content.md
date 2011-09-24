@@ -32,3 +32,14 @@ Zeitplan:
 * editor
  * vim
  * gedit (gui)
+
+* Programmierideen:
+ * Monaden
+ * Sortierverfahren
+ * Fakultät, Fibonacci
+ * Mathshit
+  * add, sub, pow
+ * http-server
+ * echo-server
+ * eigenes Modul
+ * programm einlesen und ausgeben/verändert ausführen
