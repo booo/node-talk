@@ -4,6 +4,7 @@
         {"section":"einleitung"},
         {"section":"nvm"},
         {"section":"javascript"},
-        {"section":"coffee"}
+        {"section":"coffee"},
+        {"section":"libs"}
     ]
 }
