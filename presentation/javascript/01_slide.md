@@ -60,7 +60,7 @@
     @@@ javascript
     console.log(41 + 1)
     console.log(42/2 + 2)
-    console.log(23 * 42)
+    console.log(23 \* 42)
 
 !SLIDE execute
 # Schleifen (for)
@@ -78,3 +78,31 @@
         console.log("Hello World");
         i++;
     }
+
+!SLIDE execute
+# Datentypen
+    @@@ javascript
+    var name = "aName"; //String
+    var i = 1; //Number
+    var list = [1,2,3] //Array (Liste)
+
+!SLIDE execute
+# Datentypen (Array)
+    @@@ javascript
+    var list = [1,2,3] //Array (Liste)
+    console.log(list[0]);
+    list[0] = 23;
+    list.push(42); //hängt 42 ans Array an
+    //Zwei Listen verknüpfen
+    list2 = list.concat([4,5,6])
+    [1,"string",[],{}] //gültige Liste
+
+!SLIDE
+# Module (require)
+    @@@ javascript
+    //das readline Modul einbinden
+    var rl = require("readline");
+    //Funktion aus dem Modul benutzen
+    rl.question("Wie heißt du?", function(name){
+        console.log("Du heißt: " + name);
+    });
