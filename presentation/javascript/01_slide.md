@@ -6,7 +6,7 @@
 * Klein, hässlich und macht Spaß
 
 !SLIDE execute
-# Variablen Deklaration
+# [Variablen Deklaration](http://en.wikipedia.org/wiki/Declaration_\(computer_programming\))
     @@@ javascript
     var i;
     var name;
@@ -21,7 +21,7 @@
     i = i + 1; //i++
 
 !SLIDE execute
-# Objekte
+# [Objekte](http://en.wikipedia.org/wiki/Component_Object_Model)
     @@@ javascript
     var person = {
         name: "foo",
@@ -33,17 +33,17 @@
     console.log(person.age); //neues Alter ausgeben
 
 !SLIDE execute
-# Bedingte Anweisungen
+# [Bedingte Anweisungen](http://en.wikipedia.org/wiki/Conditional_\(programming\))
     @@@ javascript
-    var gelogen = true;
-    if (gelogen) {
-        console.log("Du hast gelogen.")
+    var sunny = true;
+    if (sunny) {
+        console.log("Die Sonnescheint. Raus aus dem Keller!")
     } else {
-        console.log("Du hast nicht gelogen.")
+        console.log("Rein ins Solarium.")
     }
 
 !SLIDE execute
-# Funktionen
+# [Funktionen](http://en.wikipedia.org/wiki/Subroutine)
     @@@ javascript
     var add = function add(a,b) {
         return a + b;
@@ -63,14 +63,14 @@
     console.log(23 \* 42);
 
 !SLIDE execute
-# Schleifen (for)
+# [Schleifen (for)](http://en.wikipedia.org/wiki/Loop_\(computing\)#Loops)
     @@@ javascript
     for(var i=1;i<=13;i++) {
         console.log("Hello World");
     }
 
 !SLIDE execute
-# Schleifen (while)
+# [Schleifen (while)](http://en.wikipedia.org/wiki/Loop_\(computing\)#Loops)
 
     @@@ javascript
     var i = 0;
@@ -80,7 +80,7 @@
     }
 
 !SLIDE execute
-# Datentypen
+# [Datentypen](http://en.wikipedia.org/wiki/Data_type)
     @@@ javascript
     var name = "aName"; //String
     var i = 1; //Number
@@ -98,7 +98,7 @@
     [1,"string",[],{}] //gültige Liste
 
 !SLIDE
-# Module (require)
+# [Module (require)](http://nodejs.org/docs/v0.5.7/api/modules.html)
     @@@ javascript
     //das readline Modul einbinden
     var rl = require("readline");
@@ -119,7 +119,7 @@
     }
 
 !SLIDE
-# Callbacks
+# [Callbacks](http://en.wikipedia.org/wiki/Callback_\(computer_programming\))
     @@@ javascript
 
     var fn = function fn(callback) {
