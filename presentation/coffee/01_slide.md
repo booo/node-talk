@@ -1,7 +1,7 @@
 !SLIDE
 
 #Coffeescript
-
+* Einfach mal angucken! Just for fun...
 * Noch eine andere Programmiersprache
 * kompiliert nach Javascript
 * Einfache Syntax
