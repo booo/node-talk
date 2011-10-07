@@ -11,11 +11,16 @@ Philipp und Yves
 * 60 min Programmieren
 
 
-!SLIDE bullets incremental
+!SLIDE bullets
 # Warum node.js? #
 
 * awesome
 * schnell
 * einfach
-* nvm, npm und weitere
+
+!SLIDE bullets
+# Was ist node.js? #
+
+* serverseitiges JavaScript
+* ereignisgesteuertes Programmieren
 

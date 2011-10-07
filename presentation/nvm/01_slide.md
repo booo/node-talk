@@ -2,12 +2,6 @@
 
 # Installation und Tools #
 
-!SLIDE bullets
-# nvm #
-
-* node version manager
-* mehre node versionen parallel ohne adminrecht installieren
-* web:[github.com/creatio nix/nvm](https://github.com/creationix/nvm)
 
 !SLIDE commandline
 # Node installieren #
@@ -29,31 +23,47 @@
     ! WARNING: Moving target. Aliases to implicit ...
     $ echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
     $ node
-    > 
+    >
 
-!SLIDE 
+!SLIDE
 
-# Node benutzen #
-
-* via REPL von der Kommandozeile (interaktiv)
-
+# Node benutzen (REPL) #
 
     $ node
     > 1 + 1
     2
+    > var a = "aString"
+    > console.log(a)
+    aString
 
+($ Terminal mit bash/zsh-Prompt)
 
-!SLIDE 
+!SLIDE
 
-* ausführen von Programmdateien
-    * zu erst Programm mit Editor (z.B. gedit oder vim) schreiben
-    * dann aus der Kommandozeile ausführen
+# Node benutzen (Programme) #
 
+1. Programmdatei mit Editor erstellen:
 
-    $ node programm.js
-    Hier stehen sache die mit console.log geschrieben wurden
+        var string = "aString";
+        console.log("Ein Beispiel String: " + string);
 
+2. Aus der Bash heraus ausführen:
 
+        $ node programm.js
+        Ein Beispiel String: aString
+
+(einfacher Editor: gedit | awesome Editoren in der Konsole: vim/emacs)
+
+!SLIDE
+
+#Grundlegende Werkzeuge#
+
+!SLIDE bullets
+#nvm#
+
+* node version manager
+* mehre node versionen parallel ohne adminrecht installieren
+* web:[github.com/creatio nix/nvm](https://github.com/creationix/nvm)
 !SLIDE bullets
 
 #npm#
@@ -64,7 +74,7 @@
 
 !SLIDE commandline
 
-# Ein Paket installieren#
+#Paket installieren#
 
     $npm install log4js
     log4js@0.3.9 ./node_modules/log4js

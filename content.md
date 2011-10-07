@@ -43,3 +43,8 @@ Zeitplan:
  * echo-server
  * eigenes Modul
  * programm einlesen und ausgeben/verändert ausführen
+
+# todo
+
+* was ist eigentlich node?
+

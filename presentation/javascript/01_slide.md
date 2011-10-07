@@ -1,9 +1,25 @@
 !SLIDE
-# Einführung in Javascript #
+#  Einführung in Javascript #
 
-!SLIDE
+!SLIDE bullets
 * Einfach eine weitere Programmiersprache
 * Klein, hässlich und macht Spaß
+* [wikipedia](https://secure.wikimedia.org/wikipedia/de/wiki/Javascript)
+ 
+!SLIDE
+#  Kommentare
+
+    @@@javascript
+    //Kein Kommentar.
+
+!SLIDE execute
+# [Datentypen](http://en.wikipedia.org/wiki/Data_type)
+
+    @@@ javascript
+    "aName"; //String
+    1; //Number
+    [1,2,3]; //Array (Liste)
+
 
 !SLIDE execute
 # [Variablen Deklaration](http://en.wikipedia.org/wiki/Declaration_\(computer_programming\))
@@ -11,8 +27,10 @@
     var i;
     var name;
 
+[wikipedia](https://secure.wikimedia.org/wikipedia/de/wiki/Variable_%28Programmierung%29)
+
 !SLIDE execute
-# Zuweisung
+# Z uweisung
     @@@ javascript
     var i = 0;
     var name = "node.js"
@@ -21,7 +39,22 @@
     i = i + 1; //i++
 
 !SLIDE execute
-# [Objekte](http://en.wikipedia.org/wiki/Component_Object_Model)
+# Ausgabe
+
+    @@@ javascript
+    console.log("Hello World!");
+
+!SLIDE execute
+# Rechnen
+
+    @@@ javascript
+    console.log(41 + 1);
+    console.log(42/2 + 2);
+    console.log(23 \* 42);
+
+!SLIDE execute
+# Komplexe Datentypen [Objekte](http://en.wikipedia.org/wiki/Component_Object_Model)
+
     @@@ javascript
     var person = {
         name: "foo",
@@ -31,6 +64,18 @@
     console.log(person.name);
     person.age = 23 //Alter der Person ändern
     console.log(person.age); //neues Alter ausgeben
+
+!SLIDE execute
+# Komplexe Datentypen (Listen/Arrays)
+
+    @@@ javascript
+    var list = [1,2,3] //Array (Liste)
+    console.log(list[0]);
+    list[0] = 23;
+    list.push(42); //hängt 42 ans Array an
+    //Zwei Listen verknüpfen
+    list2 = list.concat([4,5,6]);
+    [1,"string",[],{}] //gültige Liste
 
 !SLIDE execute
 # [Bedingte Anweisungen](http://en.wikipedia.org/wiki/Conditional_\(programming\))
@@ -50,17 +95,6 @@
     }
     console.log(add(1,1));
 
-!SLIDE execute
-# Ausgabe
-    @@@ javascript
-    console.log("Hello World!");
-
-!SLIDE execute
-# Rechnen
-    @@@ javascript
-    console.log(41 + 1);
-    console.log(42/2 + 2);
-    console.log(23 \* 42);
 
 !SLIDE execute
 # [Schleifen (for)](http://en.wikipedia.org/wiki/Loop_\(computing\)#Loops)
@@ -79,23 +113,6 @@
         i++;
     }
 
-!SLIDE execute
-# [Datentypen](http://en.wikipedia.org/wiki/Data_type)
-    @@@ javascript
-    var name = "aName"; //String
-    var i = 1; //Number
-    var list = [1,2,3]; //Array (Liste)
-
-!SLIDE execute
-# Datentypen (Array)
-    @@@ javascript
-    var list = [1,2,3] //Array (Liste)
-    console.log(list[0]);
-    list[0] = 23;
-    list.push(42); //hängt 42 ans Array an
-    //Zwei Listen verknüpfen
-    list2 = list.concat([4,5,6]);
-    [1,"string",[],{}] //gültige Liste
 
 !SLIDE
 # [Module (require)](http://nodejs.org/docs/v0.5.7/api/modules.html)
@@ -110,7 +127,7 @@
 !SLIDE
 # Module (erstellen)
     @@@ javascript
-    module.exports = exports = {
+    module.exports = {
         version: "0.1",
         name: "myModule",
         add: function(a,b) {
@@ -121,14 +138,9 @@
 !SLIDE
 # [Callbacks](http://en.wikipedia.org/wiki/Callback_\(computer_programming\))
     @@@ javascript
-
-    var fn = function fn(callback) {
-        //do something funny
-        /call the callback
-        callback("great fun");
-    }
-
-    //call the function which accepts a callback
-    fn(function(result){
-        console.log(result);
-    })
+    fs = require('fs');
+    fs.readFile('file.txt',function(err,data) {
+        if (!err) {
+            console.log(data);
+        }
+    });
