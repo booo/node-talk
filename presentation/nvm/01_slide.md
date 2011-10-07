@@ -23,9 +23,9 @@
     ! WARNING: Moving target. Aliases to implicit ...
     $ echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
     $ node
-    > 
+    >
 
-!SLIDE 
+!SLIDE
 
 # Node benutzen (REPL) #
 
@@ -42,12 +42,12 @@
 
 # Node benutzen (Programme) #
 
-* Programmdatei mit Editor erstellen:
+1. Programmdatei mit Editor erstellen:
 
         var string = "aString";
         console.log("Ein Beispiel String: " + string);
 
-* Aus der Bash heraus ausführen:
+2. Aus der Bash heraus ausführen:
 
         $ node programm.js
         Ein Beispiel String: aString

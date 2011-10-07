@@ -1,7 +1,7 @@
 !SLIDE
 #  Einführung in Javascript #
 
-!SLIDE
+!SLIDE bullets
 * Einfach eine weitere Programmiersprache
 * Klein, hässlich und macht Spaß
 * [wikipedia](https://secure.wikimedia.org/wikipedia/de/wiki/Javascript)
