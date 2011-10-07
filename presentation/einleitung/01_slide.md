@@ -10,6 +10,12 @@ Philipp und Yves
 * 5 min Fragen
 * 60 min Programmieren
 
+!SLIDE bullets
+# Was ist node.js? #
+
+* JavaScript außerhalb des Browsers
+* ereignisgesteuertes Programmieren
+ * events, callbacks, timer
 
 !SLIDE bullets
 # Warum node.js? #
@@ -18,9 +24,9 @@ Philipp und Yves
 * schnell
 * einfach
 
-!SLIDE bullets
-# Was ist node.js? #
+!SLIDE
+# Source code
+    @@@bash
+    git clone git://github.com/booo/node-talk.git
 
-* serverseitiges JavaScript
-* ereignisgesteuertes Programmieren
-
+[Github Projekt](https://github.com/booo/node-talk)

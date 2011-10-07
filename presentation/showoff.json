@@ -5,6 +5,7 @@
         {"section":"javascript"},
         {"section":"nvm"},
         {"section":"coffee"},
-        {"section":"libs"}
+        {"section":"libs"},
+        {"section":"appendix"}
     ]
 }
