@@ -14,11 +14,9 @@
     Receiving objects: 100% (232/232), 31.26 KiB, done.
     Resolving deltas: 100% (124/124), done.
     $ source .nvm/nvm.sh
-    $ nvm sync
-    syncing with nodejs.org... done.
-    $ nvm install latest
+    $ nvm install v0.5.7
     [[ gaaaaaanz viel compiler output ]]
-    $ nvm alias default latest
+    $ nvm alias default v0.5.7
     default -> latest (-> v0.5.7)
     ! WARNING: Moving target. Aliases to implicit ...
     $ echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
