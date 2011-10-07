@@ -1,19 +1,20 @@
 !SLIDE
-# Einführung in Javascript #
+#  Einführung in Javascript #
 
 !SLIDE
 * Einfach eine weitere Programmiersprache
 * Klein, hässlich und macht Spaß
 * [wikipedia](https://secure.wikimedia.org/wikipedia/de/wiki/Javascript)
-
+ 
 !SLIDE
-# Kommentare
+#  Kommentare
 
     @@@javascript
     //Kein Kommentar.
 
 !SLIDE execute
-# Datentypen
+# [Datentypen](http://en.wikipedia.org/wiki/Data_type)
+
     @@@ javascript
     "aName"; //String
     1; //Number
@@ -21,7 +22,7 @@
 
 
 !SLIDE execute
-# Variablen Deklaration
+# [Variablen Deklaration](http://en.wikipedia.org/wiki/Declaration_\(computer_programming\))
     @@@ javascript
     var i;
     var name;
@@ -29,7 +30,7 @@
 [wikipedia](https://secure.wikimedia.org/wikipedia/de/wiki/Variable_%28Programmierung%29)
 
 !SLIDE execute
-# Zuweisung
+# Z uweisung
     @@@ javascript
     var i = 0;
     var name = "node.js"
@@ -39,18 +40,21 @@
 
 !SLIDE execute
 # Ausgabe
+
     @@@ javascript
     console.log("Hello World!");
 
 !SLIDE execute
 # Rechnen
+
     @@@ javascript
     console.log(41 + 1);
     console.log(42/2 + 2);
-    console.log(23 * 42);
+    console.log(23 \* 42);
 
 !SLIDE execute
-# Komplexe Datentypen (Objekte)
+# Komplexe Datentypen [Objekte](http://en.wikipedia.org/wiki/Component_Object_Model)
+
     @@@ javascript
     var person = {
         name: "foo",
@@ -63,6 +67,7 @@
 
 !SLIDE execute
 # Komplexe Datentypen (Listen/Arrays)
+
     @@@ javascript
     var list = [1,2,3] //Array (Liste)
     console.log(list[0]);
@@ -73,17 +78,17 @@
     [1,"string",[],{}] //gültige Liste
 
 !SLIDE execute
-# Bedingte Anweisungen
+# [Bedingte Anweisungen](http://en.wikipedia.org/wiki/Conditional_\(programming\))
     @@@ javascript
-    var gelogen = true;
-    if (gelogen) {
-        console.log("Du hast gelogen.")
+    var sunny = true;
+    if (sunny) {
+        console.log("Die Sonnescheint. Raus aus dem Keller!")
     } else {
-        console.log("Du hast nicht gelogen.")
+        console.log("Rein ins Solarium.")
     }
 
 !SLIDE execute
-# Funktionen
+# [Funktionen](http://en.wikipedia.org/wiki/Subroutine)
     @@@ javascript
     var add = function add(a,b) {
         return a + b;
@@ -92,14 +97,14 @@
 
 
 !SLIDE execute
-# Schleifen (for)
+# [Schleifen (for)](http://en.wikipedia.org/wiki/Loop_\(computing\)#Loops)
     @@@ javascript
     for(var i=1;i<=13;i++) {
         console.log("Hello World");
     }
 
 !SLIDE execute
-# Schleifen (while)
+# [Schleifen (while)](http://en.wikipedia.org/wiki/Loop_\(computing\)#Loops)
 
     @@@ javascript
     var i = 0;
@@ -110,7 +115,7 @@
 
 
 !SLIDE
-# Module (benutzen)
+# [Module (require)](http://nodejs.org/docs/v0.5.7/api/modules.html)
     @@@ javascript
     //das readline Modul einbinden
     var rl = require("readline");
@@ -131,7 +136,7 @@
     }
 
 !SLIDE
-# Callbacks
+# [Callbacks](http://en.wikipedia.org/wiki/Callback_\(computer_programming\))
     @@@ javascript
     fs = require('fs');
     fs.readFile('file.txt',function(err,data) {
