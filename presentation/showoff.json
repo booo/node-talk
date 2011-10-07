@@ -4,8 +4,8 @@
         {"section":"einleitung"},
         {"section":"javascript"},
         {"section":"nvm"},
-        {"section":"coffee"},
+        {"section":"appendix"},
         {"section":"libs"},
-        {"section":"appendix"}
+        {"section":"coffee"}
     ]
 }
